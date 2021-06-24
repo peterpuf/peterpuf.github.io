@@ -1,17 +1,6 @@
-## if \_\_name\_\_ == '\_\_main\_\_':
+# PuffHub
 
-```python
-	pass
-```
-<br />
-----------
-
-
-### iOS逆向相关知识
-<details>
-	<summary>
-		<font face="微软雅黑" size=4 color="#00a0f">论鄙人逆向iOS的步骤</font>
-	</summary>
+### iOS逆向相关知识 - 论鄙人逆向iOS的步骤
 > 0x00 [Objective-C 语法基础]()
 > 
 > 0x01 [Objective-C 语法进阶]()
