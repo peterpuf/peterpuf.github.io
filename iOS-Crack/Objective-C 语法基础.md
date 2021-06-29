@@ -1,8 +1,6 @@
 # Objective-C 语法基础
 
-[toc]
-
-### 简介
+## 简介
 Objective-C，通常写作ObjC或OC和较少用的Objective C或Obj-C，是扩充C的面向对象编程语言。它主要使用于Mac OS X和GNUstep这两个使用OpenStep标准的系统，而在NeXTSTEP和OpenStep中它更是基本语言。
 
 Objective-C是编写以下应用的利器：
@@ -22,30 +20,32 @@ In people words: **Objective-C是C的超集, 可以在Objective-C中使用C语�
 <br /><br />
 
 
-### 文件名称规则
+## 文件名称规则
 和```C语言```一样, OC的文件也由两部分组成. (其实支持三种类型)
 
 - ```.h``` ->  **头文件**, 包含 ```类名```、```类继承的父类```、```方法```、```变量声明```; 
+
 - ```.m``` -> **实现文件**, 可以包含```Objective-C```的代码和```C```代码, 同时它是对.h文件中方法的实现, 外部不能访问;
+
 - ```.mm``` -> **实现文件**,  和```.m```文件类似, 唯一不同的点在于除了可以包含```Objective-C```和```C```的代码之外, 还可以包含```C++```代码; 仅在你的```Objective-C```代码中确实需要使用```C++```类或者特性的时候才用这种扩展名。
 
 
 
-### 语法
+## 语法
 使用Xcode创建的app中, ```main.m```文件中的主函数
 
 ```objectivec
-	# import <UIKit/UIKit.h> 
-	# import "AppDelegate.h"
+# import <UIKit/UIKit.h> 
+# import "AppDelegate.h"
 	
-	int main(int argc, char * argv[]) {
-	    NSString * appDelegateClassName;
-	    @autoreleasepool {
-	        // Setup code that might create autoreleased objects goes here.
-	        appDelegateClassName = NSStringFromClass([AppDelegate class]);
-	    }
-	    return UIApplicationMain(argc, argv, nil, appDelegateClassName);
-	}
+int main(int argc, char * argv[]) {
+    NSString * appDelegateClassName;
+    @autoreleasepool {
+        // Setup code that might create autoreleased objects goes here.
+        appDelegateClassName = NSStringFromClass([AppDelegate class]);
+    }
+    return UIApplicationMain(argc, argv, nil, appDelegateClassName);
+}
 ```
 <br />
 
@@ -68,20 +68,20 @@ In people words: **Objective-C是C的超集, 可以在Objective-C中使用C语�
 - 定义一个类: 
 
 	```objectivec
-		@interface classA : NSObject{
-			// 实例变量
-			int id;
-			id a; // 这里的id代表返回值可能为任意类型
-			
-			// 类方法, +开头 (类似于Java中的静态方法, 可在不实例化类的情况下调用)
-			+(void) method1;
-			
-			// 实例方法, -开头 (必须先实例化类, 才能调用)
-			-(id) method2;
-			-(id) method2: (int) a1;
-			-(id) method3:(int) a1 withArg2:(int) a2;
-		}
-		@end
+	@interface classA : NSObject{
+		// 实例变量
+		int id;
+		id a; // 这里的id代表返回值可能为任意类型
+		
+		// 类方法, +开头 (类似于Java中的静态方法, 可在不实例化类的情况下调用)
+		+(void) method1;
+		
+		// 实例方法, -开头 (必须先实例化类, 才能调用)
+		-(id) method2;
+		-(id) method2: (int) a1;
+		-(id) method3:(int) a1 withArg2:(int) a2;
+	}
+	@end
 	```
 
 
