@@ -1,7 +1,7 @@
 # PuffHub
 
-### iOS逆向相关知识 - 论鄙人逆向iOS的步骤
-> 0x00 [Objective-C 语法基础]()
+### 步步惊心 - 论鄙人逆向iOS的历程
+> 0x00 [Objective-C 语法基础](./iOS-Crack/Objective-C 语法基础.md)
 > 
 > 0x01 [Objective-C 语法进阶]()
 > 
@@ -19,7 +19,9 @@
 > 
 > 0x08 [使用FishHook 对系统方法进行Hook]()
 > 
-> 0x09 待续...
+> 0x09 [iOS 自动点击]()
+> 
+> 0x10 待续...
 </details>
 
 
