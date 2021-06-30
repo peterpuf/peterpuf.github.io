@@ -1,13 +1,12 @@
-# Objective-C 语法基础
+# [Objective-C 语法基础](https://puffhub.github.io/)
 
 
-[Objective-C&nbsp;语法基础](#ObjectiveC-语法基础)
 
-&emsp;&emsp;[简介](#简介)
+[简介](#简介)
 
-&emsp;&emsp;[文件名称规则](#文件名称规则)
+[文件名称规则](#文件名称规则)
 
-&emsp;&emsp;[语法](#语法)
+[语法](#语法)
 
 
 ## 简介
