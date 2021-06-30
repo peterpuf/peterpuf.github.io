@@ -1,7 +1,17 @@
 # Objective-C 语法基础
 
+
+[Objective-C&nbsp;语法基础](#ObjectiveC-语法基础)
+
+&emsp;&emsp;[简介](#简介)
+
+&emsp;&emsp;[文件名称规则](#文件名称规则)
+
+&emsp;&emsp;[语法](#语法)
+
+
 ## 简介
-Objective-C，通常写作ObjC或OC和较少用的Objective C或Obj-C，是扩充C的面向对象编程语言。它主要使用于Mac OS X和GNUstep这两个使用OpenStep标准的系统，而在NeXTSTEP和OpenStep中它更是基本语言。
+```Objective-C```，通常写作```ObjC```或```OC```和较少用的```Objective C```或```Obj-C```，是扩充C的面向对象编程语言。它主要使用于Mac OS X和GNUstep这两个使用OpenStep标准的系统，而在NeXTSTEP和OpenStep中它更是基本语言。
 
 Objective-C是编写以下应用的利器：
 
@@ -71,22 +81,24 @@ int main(int argc, char * argv[]) {
 	@interface classA : NSObject{
 		// 实例变量
 		int id;
-		id a; // 这里的id代表返回值可能为任意类型
+		NSString* a; 
 		
 		// 类方法, +开头 (类似于Java中的静态方法, 可在不实例化类的情况下调用)
 		+(void) method1;
 		
 		// 实例方法, -开头 (必须先实例化类, 才能调用)
-		-(id) method2;
+		-(id) method2; // 这里的id代表返回值可能为任意类型
 		-(id) method2: (int) a1;
 		-(id) method3:(int) a1 withArg2:(int) a2;
 	}
 	@end
 	```
 
-
-
-
+- 类定义:
+	![简单的类定义](imgs/OC-class-header.png)
+- 类实现:
+	![简单的类实现](imgs/OC-class-implementation.jpg)
+	
 
 
 
