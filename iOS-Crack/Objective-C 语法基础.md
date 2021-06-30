@@ -1,12 +1,10 @@
 # [Objective-C 语法基础](https://puffhub.github.io/)
 
 
-
-[简介](#简介)
-
-[文件名称规则](#文件名称规则)
-
-[语法](#语法)
+目录:<br />
+&emsp;&emsp;[简介](#简介)<br />
+&emsp;&emsp;[文件名称规则](#文件名称规则)<br />
+&emsp;&emsp;[语法](#语法)
 
 
 ## 简介
@@ -58,7 +56,8 @@ int main(int argc, char * argv[]) {
 ```
 <br />
 
-这里直接列出基本语法的使用方式, 感兴趣可以自己搜一下。或[菜鸟教程](https://www.runoob.com/w3cnote/objective-c-tutorial.html)
+### 类相关语法
+这里直接列出类相关语法的使用方式, 感兴趣可以自己搜一下。或[菜鸟教程](https://www.runoob.com/w3cnote/objective-c-tutorial.html)
 
 -  引入头文件: ```# import```、```# include```
 
@@ -74,31 +73,12 @@ int main(int argc, char * argv[]) {
 - 类实现定义(.m): ``` @implementation MyClass{} @end```
 <br />**以关键字@ implementation作为开始, @end作为结束**
 
-- 定义一个类: 
-
-	```objectivec
-	@interface classA : NSObject{
-		// 实例变量
-		int id;
-		NSString* a; 
-		
-		// 类方法, +开头 (类似于Java中的静态方法, 可在不实例化类的情况下调用)
-		+(void) method1;
-		
-		// 实例方法, -开头 (必须先实例化类, 才能调用)
-		-(id) method2; // 这里的id代表返回值可能为任意类型
-		-(id) method2: (int) a1;
-		-(id) method3:(int) a1 withArg2:(int) a2;
-	}
-	@end
-	```
-
 - 类定义:
 	![简单的类定义](imgs/OC-class-header.png)
 - 类实现:
 	![简单的类实现](imgs/OC-class-implementation.jpg)
 	
-
+### 
 
 
 
