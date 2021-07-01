@@ -4,7 +4,9 @@
 目录:<br />
 &emsp;&emsp;[简介](#简介)<br />
 &emsp;&emsp;[文件名称规则](#文件名称规则)<br />
-&emsp;&emsp;[语法](#语法)
+&emsp;&emsp;[语法](#语法)<br />
+&emsp;&emsp;[OC中的指针](#OC中的指针)
+
 
 
 ## 简介
@@ -78,17 +80,73 @@ int main(int argc, char * argv[]) {
 - 类实现:
 	![简单的类实现](imgs/OC-class-implementation.jpg)
 	
-### 
+<br />
+### 基本类型
+OC的基本数据类型包括：**整型**、**字符型**、**浮点型**、**布尔型**、**枚举型**。
+
+- **整型**
+	<br />整型前加上unsigned关键字后，将它变成无符号整型，最高位不是符号位，而是数值位。
+	- short: 短整型, 内存中占2子节, 即16位, 取值范围 [-32768 ~ 32767]
+	- int: 整型, 占4子节, 取值范围 [-2147483648 ~ 2147483647]
+	- long: 长整形, 通常占8字节
+	- long long: 长整形, 通常占8字节.
+
+- **字符型**
+	<br />字符型在OC中只占用一个字节，OC字符变量不支持中文字符。可以使用转义字符表示特殊字符常量如```\n```。
+
+- **浮点型**
+	<br />浮点类型包括float、double和long double，float占用4字节，double占8字节，long double占16字节。
+
+- **布尔型**
+	<br />OC中BOOL类型有两个值: ```YES```和```NO```。
+
+- **枚举型**
+	<br />一个变量只有几种可能的值，这个变量就可以定义为枚举变量。 
+	
+	```enum season {spring,summer,fall,winter};```
 
 
+### OC中常用数据类型
+
+- NSString : OC中的字符串类型; 需要用@开头表示。 ```NSString * str = @"I'm a str";```
+- NSInteger: OC中的int类型。
+- NSArray : OC中的数组类型, **为不可变数组**。
+- NSMutableArray: OC中的数组类型, **为可变数组**。
+- NSMutableDictionary: OC中的字典类型(Map)。
+- 待继续补充...
 
 
+### 条件判断
+if 条件判断
+
+```objectivec
+if (true){
+	NSLog(@"abc");
+} else {
+	NSLog(@"cde");
+}
+```
 
 
+### 循环
+for 条件循环
+
+```objectivec
+	for (var int i=0; i<10; i++){
+		NSLog(@"%d", i);
+	}
+```
+
+while 条件循环
+
+```objectivec
+while(true){
+	NSLog(@"123");
+}
+```
 
 
-
-
+## OC中的指针
 
 
 
