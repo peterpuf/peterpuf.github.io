@@ -5,7 +5,10 @@
 &emsp;&emsp;[简介](#简介)<br />
 &emsp;&emsp;[文件名称规则](#文件名称规则)<br />
 &emsp;&emsp;[语法](#语法)<br />
-&emsp;&emsp;[OC中的指针](#OC中的指针)
+&emsp;&emsp;[OC中的指针](#OC中的指针)<br />
+&emsp;&emsp;[OC - App编译过程](#OC - App编译过程)<br />
+&emsp;&emsp;[OC中常用的库](#OC中常用的库)<br />
+
 
 
 
@@ -145,18 +148,118 @@ while(true){
 }
 ```
 
+### 结构体
+```objectivec
+typedef struct {
+	NSString name;
+	int age;
+} People;
+```
+**定义结构体** <br />
+使用```typedef struct {}```定义一个结构体, 中间的```name```和```age```为这个结构体的属性. ```People```为这个结构体的名称.
+
+**初始化结构体** <br />
+使用```People p1 = {"puff", 24};``` 初始化该结构体
+
+**结构体赋值** <br />
+
+```objectivec
+People p1 = {"puff", 24}; 		// 初始化
+p1 = (People){"peter", 18}; 	// 赋值操作(如果不强转, Xcode会报错)
+```
+
+其他正向开发相关知识可参考[这里](https://www.jianshu.com/p/f1b2085c4179)
+
 
 ## OC中的指针
+指针是一个变量: ```int* p;``` -> 指针名字为```p```, 类型为```int *```, 在64位系统下所有的指针都是8个字节。
+
+```objectivec
+int a = 0;
+
+// 初始化
+int * p = &a; 	
+
+// 赋值
+p = &a;
+
+// p记录的是a的地址，而且*p是4字节的，所以*p表示找到a的位置取4字节的长度来进行运算。所以*p=a。*p=8即a=8
+*p = 8;		
+```
+地址是常量，指针是变量。<br />
+指针是地址的变量。<br />
+&6  这是不正确的。<br />
+变量才有空间，所以变量有地址。<br />
+常量没有空间，所以常量是没有地址的。<br />
+
+内容摘自[这里](https://www.douban.com/note/335334437/), 感兴趣可以点开看下。
 
 
 
 
+## OC - App编译过程
+[这里](https://www.jianshu.com/p/0e284c255667)已经讲的很详细了, 不多做概述。
 
 
+## OC中常用的库
 
+**日志输出**:
 
+ ```NSLog```
 
+```objectivec
+NSLog(@"this is a log");
+```
 
+**文件操作**:
+
+```NSFileManager``` (文件管理类，新建、删除、移动、遍历文件夹等)
+
+```objectivec
+// 创建文件管理类单例对象
+NSFileManager *fileManger=[NSFileManager defaultManager];
+
+// 创建目录; args: (文件夹目录, 是否附带中间路径, 目录属性, 如果目录创建失败返回的失败信息)
+NSError *error=nil;
+BOOL ret=[fileManager createDirectoryAtPath:@"/Users/puff/Test" withIntermediateDirectories:NO attributes:nil error:&error];
+if(ret){
+ NSLog(@"目录创建成功")；
+}else{
+   NSLog(@"目录创建失败，reason:%@",error)；
+}
+```
+
+<br />
+```NSFileHandle``` (操作文件, 读取、写入)
+
+```objectivec
+// 只读, 不可写
+//从光标的位置读到文件末尾，如果不去操作光标位置，那么光标默认是在文件的最前面。读出的是二进制数据，要转换一下才能看到有意义的字符串
+NSFileHandle *  = [NSFileHandle fileHandleForReadingAtPath:"/Users/puff/test/test.txt"]; NSLog(@"%@",[fileHandle  readDataToEndOffFile]);
+
+// 只写, 不可读
+NSFileHandle *  = [NSFileHandle fileHandleForWritingAtPath:"/Users/puff/test/test.txt"]; 
+
+// 可读可写
+NSFileHandle *  = [NSFileHandle fileHandleForUpdatingAtPath:"/Users/puff/test/test.txt"]; 
+
+// 读取文件
+NSLog(@"%@", [fileHandle  readDataToEndOffFile]);
+
+// 写入数据
+NSString *string=@"baidu.com";
+[fileHandle  writeData:[string dataUsingEncoding:NSUTF8StringEncoding]];
+
+// 在进行了文件数据的修改后，可以手动调用synchronizeFile方法，来完成数据的同步，这是很常用的。
+[fileHandle  synchronizeFile];
+
+// 每次打开文件，操作完成后，必须关闭文件。关闭之后就不能继续进行操作了。
+[NSFileHandle  closeFile];
+```
+
+**数据库操作**:
+
+[这里](https://www.jianshu.com/p/005dadd78ad6)很详细了.
 
 
 
