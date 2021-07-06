@@ -1,4 +1,4 @@
-# [Objective-C 语法基础](https://puffhub.github.io/)
+# [Objective-C 语法基础](https://puffhub.github.io/iOS-Crack/)
 
 
 目录:<br />
@@ -6,7 +6,7 @@
 &emsp;&emsp;[文件名称规则](#文件名称规则)<br />
 &emsp;&emsp;[语法](#语法)<br />
 &emsp;&emsp;[OC中的指针](#OC中的指针)<br />
-&emsp;&emsp;[OC - App编译过程](#OC - App编译过程)<br />
+&emsp;&emsp;[OC-App编译过程](#OC-App编译过程)<br />
 &emsp;&emsp;[OC中常用的库](#OC中常用的库)<br />
 
 
@@ -197,7 +197,7 @@ p = &a;
 
 
 
-## OC - App编译过程
+## OC-App编译过程
 [这里](https://www.jianshu.com/p/0e284c255667)已经讲的很详细了, 不多做概述。
 
 
