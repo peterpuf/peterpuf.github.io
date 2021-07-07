@@ -205,9 +205,6 @@ p = &a;
 ## OC中常用的库
 **日志输出**:
 
- ```NSLog```
-
-
 ```objectivec
 NSLog(@"this is a log");
 ```
