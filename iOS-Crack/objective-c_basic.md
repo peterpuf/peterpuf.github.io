@@ -25,10 +25,6 @@
 
 ### 线程操作/dispatch_after/blablabblabla
 
-### 系统常用的API (获取时间/获取位置/blablabla)
-
-### ArrayList / HashMap的使用
-
 ### 总结语法进阶可能遇到的坑
 
 
