@@ -212,6 +212,7 @@ p = &a;
 
  ```NSLog```
 
+
 ```objectivec
 NSLog(@"this is a log");
 ```
@@ -265,6 +266,137 @@ NSString *string=@"baidu.com";
 **数据库操作**:
 
 [这里](https://www.jianshu.com/p/005dadd78ad6)很详细了.
+
+**强转**:
+
+[这里](https://blog.csdn.net/songweiwei27/article/details/65631384)
+
+**Array操作**: 
+
+不可变数组
+
+```objectivec
+// 创建一个不可变数组
+NSArray *arr1 = nil;
+
+// 为数组赋值, 赋值后不可变, nil -> 结束标识，相当于C语言的“\0”
+arr1 = [NSArray arrayWithObjects:@"One", @"Two", @"Three", nil];
+NSLog(@"arr1: %@", arr1);
+
+// 访问数组成员
+id tmpObj = [arr1 objectAtIndex:3];
+
+// 推荐以下的新语法
+NSString *str = @"Hello";
+
+// 这样的方法自己主动在后面加入了nil
+NSArray *arr2 = @[@"zhangsan", @"lisi", @"wangwu", @"zhaoliu" ,@"tianqi", str];
+NSLog(@"arr2: %@", arr2);
+
+// 访问数组成员
+tmpObj = arr2[2];
+
+```
+
+可变数组
+
+```objectivec
+// 初始化可变数组
+NSMutableArray *arr = [[NSMutableArray alloc] new];
+// 创建一个大小为30的可变数组
+NSMutableArray *firstArr = [NSMutableArray arrayWithCapacity:30];
+
+// 添加元素
+[firstArr addObject:@"One"];
+[firstArr addObject:@"Two"];
+[firstArr addObject:@"Three"];
+
+// 删除元素
+[firstArr removeObject:@"One"];
+[firstArr removeObjectAtIndex:2];
+
+// 插入元素
+[firstArr insertObject:@"wangwu" atIndex:2];
+
+// 遍历数组
+NSUInteger number = [firstArr count];
+for (int i = 0; i < number; i++) {
+    id obj = firstArr[i];
+    NSLog(@"%@", obj);
+}
+
+// 高速枚举
+for (id obj in firstArr) {
+    NSLog(@"Fast Enumeration: %@", obj);
+}
+
+```
+
+**Map操作**
+
+不可变字典
+
+```objectivec
+// 创建不可变字典, 其中1为key, one为value
+NSDictionary * dict = [[NSDictionary alloc]initWithObjectsAndKeys:@"one",@"1",@"two",@"2",@"three",@"3",@"four",@"4", nil];
+
+// 也可以这样创建
+NSDictionary * dict2 = @{@"4" : @"Four", @"1" : @"One", @"2" : @"Two", @"3" : @"Three"};
+
+// 获取key为3的值
+NSString * value = [dict objectForKey:@"3"];
+
+// 获取所有的key / value
+NSArray * keys = [dict allKeys];
+NSArray * values = [dict allValues];
+
+// 遍历字典
+for (NSString * key in dict) {
+    // 每次循环key指向一个键, 通过遍历键，间接遍历了值
+    NSLog(@"%@", dict[key]);
+}
+```
+
+可变字典
+
+```objectivec
+// 初始化
+NSMutableDictionary * mutableDict = [[NSMutableDictionary alloc] init];
+
+// 赋值
+[mutableDict setDictionary:@{@"1" : @"One", @"2" : @"Two", @"3" : @"Three"}];
+
+// 增加
+[mutableDict setObject:@"Four" forKey:@"4"];
+
+// 通过key删除一个或多个值
+[mutableDict removeObjectForKey:@"3"];
+[mutableDict removeObjectsForKeys:@[@"1", @"2", @"3"]];
+
+//删除所有键值对
+[mutableDict removeAllObjects];
+
+// 遍历字典
+for (NSString * key in mutableDict) {
+    NSLog(@"%@", mutableDict[key]);
+}
+```
+
+## 坑
+刚入坑iOS的时候看语法那叫一个费劲, 不过理解了基本的数据类型和如何调用一个对象的方法之后, 再看代码也就没那么费劲了。新手容易出现的问题还是在类型转换, 数组、字典的操作等这些方面出现问题，有个比较好的办法是可以点开代码的声明去看头文件里面的方法，大部分方法通过名字就知道是做什么的，还看不懂可以去网上查一下具体的用法。
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
