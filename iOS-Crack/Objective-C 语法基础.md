@@ -5,9 +5,9 @@
 &emsp;&emsp;[简介](#简介)<br />
 &emsp;&emsp;[文件名称规则](#文件名称规则)<br />
 &emsp;&emsp;[语法](#语法)<br />
-&emsp;&emsp;[OC中的指针](#OC中的指针)<br />
-&emsp;&emsp;[OC-App编译过程](#OCApp编译过程)<br />
-&emsp;&emsp;[OC中常用的库](#OC中常用的库)<br />
+&emsp;&emsp;[指针](#指针)<br />
+&emsp;&emsp;[编译过程](#编译过程)<br />
+&emsp;&emsp;[常用库](#常用库)<br />
 &emsp;&emsp;[坑](#坑)<br />
 
 
@@ -172,7 +172,7 @@ p1 = (People){"peter", 18}; 	// 赋值操作(如果不强转, Xcode会报错)
 其他正向开发相关知识可参考[这里](https://www.jianshu.com/p/f1b2085c4179)
 
 
-## OC中的指针
+## 指针
 指针是一个变量: ```int* p;``` -> 指针名字为```p```, 类型为```int *```, 在64位系统下所有的指针都是8个字节。
 
 ```objectivec
@@ -198,11 +198,11 @@ p = &a;
 
 
 
-## OC-App编译过程
+## 编译过程
 [这里](https://www.jianshu.com/p/0e284c255667)已经讲的很详细了, 不多做概述。
 
 
-## OC中常用的库
+## 常用库
 **日志输出**:
 
 ```objectivec
