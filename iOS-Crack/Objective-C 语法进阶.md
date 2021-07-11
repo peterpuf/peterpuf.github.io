@@ -18,7 +18,8 @@ NSLog(@"%@", [NSThread currentThread]);
 NSLog(@"%@", [NSThread mainThread]);
 
 // 获取线程名字
-[NSThread name];
+[NSThread name];.
+
 ```
 
 ```@selector```用法在[这里](https://blog.csdn.net/fengsh998/article/details/8612969)
