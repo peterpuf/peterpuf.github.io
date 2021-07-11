@@ -3,6 +3,7 @@
 
 
 ## 线程操作
+
 ```objcetivec
 // 手动启动线程
 NSThread *theard = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
@@ -19,10 +20,9 @@ NSLog(@"%@", [NSThread mainThread]);
 
 // 获取线程名字
 [NSThread name];.
-
 ```
+```@selector``` 用法在[这里](https://blog.csdn.net/fengsh998/article/details/8612969)
 
-```@selector```用法在[这里](https://blog.csdn.net/fengsh998/article/details/8612969)
 
 ## 延时函数 - dispatch_after
 
