@@ -20,10 +20,10 @@ NSLog(@"%@", [NSThread mainThread]);
 // 获取线程名字
 [NSThread name];
 ```
+
 ```@selector```用法在[这里](https://blog.csdn.net/fengsh998/article/details/8612969)
 
-
-## 延时函数 dispatch_after
+## 延时函数 - dispatch_after
 
 ```dispatch_after```能让我们添加进队列的任务延时执行，该函数并不是在指定时间后执行处理，而只是在指定时间追加处理到```dispatch_queue```该方法的第一个参数是```time```，第二个参数是```dispatch_queue```，第三个参数是要执行的```block```.
 
