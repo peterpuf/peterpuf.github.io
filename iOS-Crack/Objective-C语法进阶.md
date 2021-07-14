@@ -21,7 +21,7 @@ NSLog(@"%@", [NSThread mainThread]);
 // 获取线程名字
 [NSThread name];.
 ```
-```@selector``` 用法在[这里](https://blog.csdn.net/fengsh998/article/details/8612969)
+```@selector```是查找当前类（含子类）的方法。 详细用法在[这里](https://blog.csdn.net/fengsh998/article/details/8612969)
 
 
 ## 延时函数 - dispatch_after
