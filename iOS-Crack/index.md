@@ -8,14 +8,16 @@
 > 
 > 0x03 [iOS逆向开发环境搭建](./iOS逆向开发环境搭建.md)
 > 
-> 0x04 [Hook简介]()
+> 0x04 [iOS越狱&App砸壳](./iOS越狱&App砸壳.md)
 > 
-> 0x05 [FishHook原理]()
+> 0x05 [Hook简介]()
 > 
-> 0x06 [Logos原理]()
+> 0x06 [FishHook原理]()
 > 
-> 0x07 [使用FishHook 对系统方法进行Hook]()
+> 0x07 [Logos原理]()
 > 
-> 0x08 [iOS 自动点击]()
+> 0x08 [使用FishHook 对系统方法进行Hook]()
 > 
-> 0x09 待续...
+> 0x09 [iOS 自动点击]()
+> 
+> 0x10 待续...
