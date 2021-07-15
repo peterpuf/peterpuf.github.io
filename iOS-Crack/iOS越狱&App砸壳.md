@@ -86,3 +86,33 @@
 
 
 ## 使用frida-dump砸壳
+
+### Github下载[frida-ios-dump](https://github.com/AloneMonkey/frida-ios-dump)
+
+``` git clone https://github.com/AloneMonkey/frida-ios-dump.git```
+
+### 安装usbmuxd
+``` brew intall usbmuxd``` 安装过程很漫长... 很漫长.................... (也可能是我安装的时候网络不太好的原因, 逃
+
+### 使用[iProxy](https://github.com/tcurdt/iProxy)
+iProxy是一个可以将设备上端口号映射到电脑某个端口的软件, ```iproxy 2222 22``` 这句话的意思就是把设备的22端口映射到电脑的2222端口上. 使用```ssh -p 2222 root@127.0.0.1``` 就可以通过usb连接手机了(连接本地的2222端口), 速度比OpenSSH连接快很多.
+
+
+### 安装Frida
+终端使用命令: ```sudo pip install frida```
+
+### 开始砸壳
+打开之前下载的```frida-ios-dump```, 如果root密码修改过或端口不是2222, 则需要先修改```dump.py```中的前几行内容
+运行的时候可以使用 ```python3 dump.py 微信```进行dump操作, 参数为要dump的包.
+
+
+### 异常情况
+报错: ```Failed to enumerate applications: this feature requires an iOS Developer Disk Image to be mounted; run Xcode briefly or use ideviceimagemounter to mount one manually```
+
+解决: 打开一下Xcode即可
+
+<br />
+报错: ```need Gadget to attach on jailed iOS; its default location is: xxxx```
+
+解决: 按照PC上frida安装的版本, 去[这里](https://github.com/frida/frida/releases/)下载frida-gadget-ios的包, 并放到报错中提示的位置.
+
