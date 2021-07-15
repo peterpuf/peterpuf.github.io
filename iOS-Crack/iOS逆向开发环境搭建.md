@@ -8,6 +8,8 @@
 > **Logos Tweak**
 > 
 > 使用theos提供的logify.pl工具将.xm文件转成.mm文件进行编译，集成了CydiaSubstrate，可以使用MSHookMessageEx和MSHookFunction来Hook OC函数和指定地址。
+>
+>  Logos框架需要将hook代码写到.xm文件中，需要使用该工具将.xm文件转成.mm打包.
 
 <br />
 
@@ -26,6 +28,8 @@
 > **MonkeyApp**
 > 
 > 这是自动给第三方应用集成Reveal、Cycript和注入dylib的模块，支持调试dylib和第三方应用，支持Pod给第三放应用集成SDK，只需要准备一个砸壳后的ipa或者app文件即可。
+> 
+> 及其方便, 安装完成后直接内置到xcode中, 可创建建MonkeyApp应用直接进行hook.
 
 
 **下载**:
@@ -48,6 +52,7 @@
 
 我的系统版本是OS X 11.4, 安装过程中提示我ldid安装失败, 系统版本太高, 于是去官网下载了最新的xcode13-beta, 这样一来本地就存在一个xcode12和一个xcode13-beta了, 所以需要选择安装到xcode13-beta上, 命令是 ```sudo xcode-select -s /Applications/Xcode-beta.app```
 
+<br />
 
 2、执行安装命令
 
@@ -55,7 +60,7 @@
 
 这里总是会出现下载失败的情况，只需要手动把这个文件下载下来之后使用shell运行一下即可~
 
-
+<br />
 到这里基本的逆向环境就搭建完成啦~
 
 
