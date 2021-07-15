@@ -4,7 +4,7 @@
 > 
 > 0x01 [Objective-C 语法进阶](./Objective-C语法进阶.md)
 > 
-> 0x02 [Xcode创建第一个demo应用](./iOS逆向开发环境搭建.md)
+> 0x02 [Xcode创建第一个demo应用](./iOS正向开发基础知识.md)
 > 
 > 0x03 [iOS逆向开发环境搭建](./iOS逆向开发环境搭建.md)
 > 
