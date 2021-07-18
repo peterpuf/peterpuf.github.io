@@ -13,8 +13,8 @@
 越狱完成后, 手机上会出现一个Cydia的app, **Cydia类似于越狱后的App Store**, 大多是下载一些第三方的软件和补丁, 主要是弥补系统不足使用。
 
 <br />
-
 ## 使用dumpDecrupted砸壳
+(推荐使用后两种砸壳方式, 方便快捷)
 
 ### 安装必要软件
 **越狱后需要先在Cydia中搜索```OpenSSH```和```Cycript```并安装。```OpenSSH```是用于使用终端远程连接手机的包, 安装之后就可以通过ssh的方式进入手机内部, root用户的默认密码是*alpine*. ```Cycript```是命令行下和应用交互的插件。**
@@ -91,14 +91,14 @@
 
 ``` git clone https://github.com/AloneMonkey/frida-ios-dump.git```
 
-### 安装usbmuxd
+### 安装[usbmuxd](https://github.com/libimobiledevice/usbmuxd)
 ``` brew intall usbmuxd``` 安装过程很漫长... 很漫长.................... (也可能是我安装的时候网络不太好的原因, 逃
 
 ### 使用[iProxy](https://github.com/tcurdt/iProxy)
 iProxy是一个可以将设备上端口号映射到电脑某个端口的软件, ```iproxy 2222 22``` 这句话的意思就是把设备的22端口映射到电脑的2222端口上. 使用```ssh -p 2222 root@127.0.0.1``` 就可以通过usb连接手机了(连接本地的2222端口), 速度比OpenSSH连接快很多.
 
 
-### 安装Frida
+### 安装[Frida](https://github.com/frida/frida)
 终端使用命令: ```sudo pip install frida```
 
 ### 开始砸壳
@@ -106,7 +106,7 @@ iProxy是一个可以将设备上端口号映射到电脑某个端口的软件, 
 运行的时候可以使用 ```python3 dump.py 微信```进行dump操作, 参数为要dump的包.
 
 
-### 异常情况
+### 遇到的异常
 报错: ```Failed to enumerate applications: this feature requires an iOS Developer Disk Image to be mounted; run Xcode briefly or use ideviceimagemounter to mount one manually```
 
 解决: 打开一下Xcode即可

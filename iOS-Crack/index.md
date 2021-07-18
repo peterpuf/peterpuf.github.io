@@ -1,4 +1,4 @@
-### [步步惊心 - 论鄙人逆向iOS的历程](https://puffhub.github.io/)
+### [步步惊心 - 逆向iOS的历程](https://puffhub.github.io/)
 
 > 0x00 [Objective-C 语法基础](./Objective-C语法基础.md)
 > 
@@ -10,14 +10,18 @@
 > 
 > 0x04 [iOS越狱&App砸壳](./iOS越狱&App砸壳.md)
 > 
-> 0x05 [Hook简介]()
+> 0x05 [MachO文件介绍]()
+>  
+> 0x06 [FishHook的原理及使用]()
 > 
-> 0x06 [FishHook原理]()
+> 0x07 [Logos的原理及使用]()
 > 
-> 0x07 [Logos原理]()
+> 0x08 [LLDB的正确使用方式]()
 > 
-> 0x08 [使用FishHook 对系统方法进行Hook]()
+> 0x09 [使用FishHook 对系统方法进行Hook]()
 > 
-> 0x09 [iOS 自动点击]()
+> 0x10 [说点啥呢这里]()
 > 
-> 0x10 待续...
+> 0x11 [iOS 自动点击]()
+> 
+> 0x12 待续...
