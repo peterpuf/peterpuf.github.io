@@ -74,14 +74,38 @@ RegisterNatives注册时给ArtMethod fnptr赋值的过程, fnptr是JNI函数的�
 - 1、检测方法数量, 如果方法数量不匹配会报异常,
 - 2、遍历注册
 
+待续...
 
 
+<br />
+## 0x05 单双抓包证书验证
+Android 7.0以上系统默认不信任用户手动安装的证书, 所以可以在Root后讲证书移动到系统证书. ```/system/etc/security/cacerts/```
+
+### 单项验证:
+仅在客户端进行严重
 
 
+### 双向验证:
+客户端和服务端双向验证
+
+### 单项验证常用证书验证方式:
+
+- 证书验证```sslSocketFactory```
+
+- 域名验证``` hostNameVerifier```
+
+- 证书锁定```certificatePinner``` (只有OKHTTP有这个验证)
+
+#### JustTrustMe 原理
+JustTrustMe Hook了常用框架中的证书验证方法, 过证书验证
+
+#### JustTrustMePlush 原理
+在JustTrustMe的基础之上, 做了内存识别的功能, 获取内存中全部的类, 尝试遍历类的特征(防止被混淆)
 
 
-
-
+### 双向验证处理
+1、App证书提取 -> 证书导入
+2、Hook 发包器
 
 
 
