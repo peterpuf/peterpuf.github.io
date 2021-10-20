@@ -66,6 +66,10 @@
 
 
 
+<br /> <br />
+**遇到的问题**
+```File /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Xcode/Specifications/MacOSX Package Types.xcspec not found```
 
+出现这个问题的原因是找不到Specifications文件夹, 原因是从XCode12开始，就不会包含这个文件夹了, 需要从XCode11 复制一个过来即可, 没有XCode11的可以从我的阿里云盘下载. [链接](https://www.aliyundrive.com/s/ex1NvQ5JvL4)
 
 
