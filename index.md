@@ -4,7 +4,7 @@
 
 ### [Android逆向相关](Android-Crack/index.md)
 
-### [JS/小程序逆向相关](小程序逆向/微信小程序逆向.md)
+### [JS/小程序逆向相关](MiniProgram/JS/index.md)
 
 ### [加密算法]()
 
