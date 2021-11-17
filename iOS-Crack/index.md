@@ -1,4 +1,4 @@
-### [步步惊心 - 逆向iOS的历程](https://puffhub.github.io/)
+### [iOS逆向](https://puffhub.github.io/)
 
 > 0x00 [Objective-C 语法基础](./Objective-C语法基础.md)
 > 
@@ -20,8 +20,8 @@
 > 
 > 0x09 [使用FishHook 对系统方法进行Hook]()
 > 
-> 0x10 [说点啥呢这里]()
+> 0x10 [iOS 自动点击](./iOS自动点击.md)
 > 
-> 0x11 [iOS 自动点击](./iOS自动点击.md)
+> 0x11 [问题总结](./问题总结.md)
 > 
 > 0x12 待续...

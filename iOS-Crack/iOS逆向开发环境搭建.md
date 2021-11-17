@@ -48,6 +48,8 @@
 
 1、选择制定的xcode安装
 
+```sudo xcode-select -p``` 查看本机安装的xcode路径
+
 ```sudo xcode-select  -s + 自己的xcode路径```
 
 我的系统版本是OS X 11.4, 安装过程中提示我ldid安装失败, 系统版本太高, 于是去官网下载了最新的xcode13-beta, 这样一来本地就存在一个xcode12和一个xcode13-beta了, 所以需要选择安装到xcode13-beta上, 命令是 ```sudo xcode-select -s /Applications/Xcode-beta.app```
@@ -70,6 +72,6 @@
 **遇到的问题**
 ```File /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Xcode/Specifications/MacOSX Package Types.xcspec not found```
 
-出现这个问题的原因是找不到Specifications文件夹, 原因是从XCode12开始，就不会包含这个文件夹了, 需要从XCode11 复制一个过来即可, 没有XCode11的可以从我的阿里云盘下载. [链接](https://www.aliyundrive.com/s/ex1NvQ5JvL4)
+出现这个问题的原因是找不到Specifications文件夹, 原因是从XCode12开始，就不会包含这个文件夹了, 需要从XCode11 复制一个过来即可, 没有XCode11的可以从阿里云盘下载. [链接](https://www.aliyundrive.com/s/ex1NvQ5JvL4)
 
 
