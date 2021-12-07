@@ -1,4 +1,4 @@
-### [左右开弓 - JS/小程序逆向](https://puffhub.github.io/)
+### [JS/小程序逆向相关](https://puffhub.github.io/)
 
 > 0x00 [小程序逆向实战](./小程序逆向/微信小程序逆向.md)
 > 
