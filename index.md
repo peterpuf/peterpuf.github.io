@@ -11,14 +11,10 @@
 
 ### [加密算法]()
 
-<!-----
-## 自动化
-
-### [puppeteer](Automatic/puppeteer.js)-->
 
 
 <br /> 
-## 常用函数/初始化脚本整理
+## 常用函数 / 自动化 / 初始化脚本整理
 
 ### [NodeJs](Syntax/NodeJs.md)
 

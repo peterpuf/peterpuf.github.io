@@ -2,11 +2,13 @@
 
 ### 执行系统命令
 ```
-var exec = require('child_process').exec;
-var cmd = 'echo 1';
-exec(cmd, function(error, stdout, stderr) {
-  console.log(stdout);
-});
+function execCmd(){
+	var exec = require('child_process').exec;
+	var cmd = 'echo 1';
+	exec(cmd, function(error, stdout, stderr) {
+	  console.log(stdout);
+	});
+}
 ```
 
 ### 读取控制台
@@ -29,4 +31,37 @@ const fs = require('fs');
 function readFile(fileName) {
   return fs.readFileSync(fileName, 'utf-8')
 }
+```
+
+### 覆盖写文件
+``` 
+function writeByName(fileName, str) {
+  fs.writeFileSync(fileName, str, 'utf8', function (err) {
+      if (err) {
+          return console.log(err);
+      }
+      console.log("保存完成");
+  });
+}
+```
+
+### 发请求(get)
+```
+const http = require("http");
+function doGet(){
+	http.get('http://www.baidu.com', resp => {
+	  let data = "";
+	  resp.on("data", function(chunk) {
+	    data += chunk;
+	  });
+	  resp.on("end", () => {
+	    console.log(data);
+	  });
+	  resp.on("error", err => {
+	    console.log(err.message);
+	  });
+	});
+
+}
+
 ```
