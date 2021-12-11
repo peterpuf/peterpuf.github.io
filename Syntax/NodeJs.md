@@ -45,6 +45,25 @@ function writeByName(fileName, str) {
 }
 ```
 
+### 遍历文件夹
+```
+const fs = require('fs');
+const path=require('path');
+function travel(dir,callback){
+    fs.readdirSync(dir).forEach((file)=>{
+        var pathname=path.join(dir,file)
+        if(fs.statSync(pathname).isDirectory()){
+            travel(pathname,callback)
+        }else{
+            callback(pathname)
+        }
+    })
+}
+travel('./cookies',function(pathname){
+    console.log(pathname)
+})
+```
+
 ### 发请求(get)
 ```
 const http = require("http");
