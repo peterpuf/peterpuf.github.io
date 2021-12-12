@@ -162,3 +162,32 @@ async function compare() {
 }
 ```
 </details>
+
+<br />
+<details>
+<summary>**拦截请求**</summary>
+[request.continue()参数](https://zhaoqize.github.io/puppeteer-api-zh_CN/#?product=Puppeteer&version=v13.0.0&show=api-requestcontinueoverrides)
+
+```
+
+const puppeteer = require('puppeteer');
+(async () => {
+  try {
+    const browser = await puppeteer.launch({
+      ignoreHTTPSErrors: true,
+      headless: false,
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    }).catch(() => browser.close);
+    const page = await browser.newPage();
+    await page.setRequestInterception(true);
+    await page.on('request', request => {
+      request.continue();
+    });
+    await page.goto('https://baidu.com');
+    await page.screenshot({ path: 'news.png', fullPage: true });
+    await browser.close();
+  } catch (e) {
+    console.log(e);
+  }
+})();
+</details>
