@@ -1,4 +1,4 @@
-# [XPosed疑难杂症](https://puffhub.github.io/Android-Crack/)
+# [XPosed疑难杂症](https://puffhub.github.io/Crack/Android-Crack/)
 
 
 <br />

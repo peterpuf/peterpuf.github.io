@@ -1,4 +1,4 @@
-# [iOS越狱&App砸壳](https://puffhub.github.io/iOS-Crack/)
+# [iOS越狱&App砸壳](https://puffhub.github.io/Crack/iOS-Crack/)
 
 
 ## 越狱

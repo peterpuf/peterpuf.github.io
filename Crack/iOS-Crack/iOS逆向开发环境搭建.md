@@ -1,4 +1,4 @@
-# [iOS逆向开发环境搭建](https://puffhub.github.io/iOS-Crack/)
+# [iOS逆向开发环境搭建](https://puffhub.github.io/Crack/iOS-Crack/)
 
 ## MonkeyDev
 转载自[简书](https://www.jianshu.com/p/207801a902d1)

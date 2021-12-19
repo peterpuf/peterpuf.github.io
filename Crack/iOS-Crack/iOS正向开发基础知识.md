@@ -1,4 +1,4 @@
-# [iOS正开发基础知识](https://puffhub.github.io/iOS-Crack/)
+# [iOS正开发基础知识](https://puffhub.github.io/Crack/iOS-Crack/)
 
 &emsp;[创建一个iOS的App](#创建一个iOS的App)
 

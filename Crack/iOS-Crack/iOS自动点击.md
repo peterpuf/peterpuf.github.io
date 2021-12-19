@@ -1,4 +1,4 @@
-# [iOS自动点击](https://puffhub.github.io/iOS-Crack/)
+# [iOS自动点击](https://puffhub.github.io/Crack/iOS-Crack/)
 
 ## 背景
 iOS自动点击顾名思义是在iOS设备上进行模拟点击的操作, 一开始按照想法想做一个类似安卓自动点击技术方案的产品(hook activity生命周期, 控件直接performClick...), 但真正进入开发后, 我发现我想的太简单了...

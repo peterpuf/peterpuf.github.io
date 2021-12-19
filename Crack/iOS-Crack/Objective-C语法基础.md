@@ -1,4 +1,4 @@
-# [Objective-C 语法基础](https://puffhub.github.io/iOS-Crack/)
+# [Objective-C 语法基础](https://puffhub.github.io/Crack/iOS-Crack/)
 
 
 目录:<br />

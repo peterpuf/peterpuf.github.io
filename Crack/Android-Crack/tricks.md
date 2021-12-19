@@ -1,4 +1,4 @@
-# [Tricks](https://puffhub.github.io/Android-Crack/)
+# [Tricks](https://puffhub.github.io/Crack/Android-Crack/)
 
 **一行命令dump页面元素**
 

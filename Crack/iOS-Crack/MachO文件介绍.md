@@ -1,4 +1,4 @@
-# [MachO文件介绍](https://puffhub.github.io/iOS-Crack/)
+# [MachO文件介绍](https://puffhub.github.io/Crack/iOS-Crack/)
 
 ## 简介
 MachO文件是iOS和Mac OS上的可执行文件格式, 类似于Windows的PE和Linux的ELF文件.
