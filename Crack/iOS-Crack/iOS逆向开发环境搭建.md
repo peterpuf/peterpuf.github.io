@@ -3,6 +3,7 @@
 ## MonkeyDev
 转载自[简书](https://www.jianshu.com/p/207801a902d1)
 
+MonkeyDev [Github Wiki地址](https://github.com/AloneMonkey/MonkeyDev/wiki)
 ### **主要包含4个模块**
 
 > **Logos Tweak**
@@ -60,7 +61,7 @@
 
 ```sudo /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/AloneMonkey/MonkeyDev/master/bin/md-install)"```
 
-这里总是会出现下载失败的情况，只需要手动把这个文件下载下来之后使用shell运行一下即可~
+这里可能会出现下载失败的情况，只需要手动把这个文件下载下来之后使用shell运行一下即可~
 
 <br />
 到这里基本的逆向环境就搭建完成啦~
@@ -70,8 +71,13 @@
 
 <br /> <br />
 **遇到的问题**
+
+--- 
 ```File /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Xcode/Specifications/MacOSX Package Types.xcspec not found```
 
 出现这个问题的原因是找不到Specifications文件夹, 原因是从XCode12开始，就不会包含这个文件夹了, 需要从XCode11 复制一个过来即可, 没有XCode11的可以从阿里云盘下载. [链接](https://www.aliyundrive.com/s/ex1NvQ5JvL4)
 
+下载后将文件夹拷贝到```/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Xcode```路径下即可
+
+---
 

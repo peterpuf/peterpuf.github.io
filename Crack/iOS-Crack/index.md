@@ -10,18 +10,20 @@
 > 
 > 0x04 [iOS越狱&App砸壳](./iOS越狱&App砸壳.md)
 > 
-> 0x05 [MachO文件介绍]()
+> 0x05 [搭建MonkeyDev项目](./搭建MonkeyDev项目.md)
+> 
+> 0x06 [MachO文件介绍]()
 >  
-> 0x06 [FishHook的原理及使用]()
+> 0x07 [FishHook的原理及使用](./FishHook原理及应用.md)
 > 
-> 0x07 [Logos的原理及使用]()
+> 0x08 [Logos的语法及使用]()
 > 
-> 0x08 [LLDB的正确使用方式]()
+> 0x09 [LLDB的正确使用方式](./LLDB使用.md)
 > 
-> 0x09 [使用FishHook 对系统方法进行Hook]()
+> 0x10 [使用FishHook 对系统方法进行Hook]()
 > 
-> 0x10 [iOS 自动点击](./iOS自动点击.md)
+> 0x11 [iOS 自动点击](./iOS自动点击.md)
 > 
-> 0x11 [问题总结](./问题总结.md)
+> 0x12 [问题总结](./问题总结.md)
 > 
-> 0x12 待续...
+> 0x13 待续...

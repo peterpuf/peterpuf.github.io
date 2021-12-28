@@ -54,14 +54,14 @@ await page.evaluate(async () => {
 });
 ```
 
-### 过webdriver脚本 [_](https://github.com/kingname/stealth.min.js)
+### 过webdriver脚本 [.](https://github.com/kingname/stealth.min.js)
 ```
 await page.evaluateOnNewDocument(脚本内容);
 ```
 
 <br />
 <details>
-<summary>**过极验滑块**</summary>
+<summary>**过极验滑块[.](https://github.com/puffhub/puffhub.github.io/blob/master/Syntax/Puppeteer.md)**</summary>
 
 ```
 async function slider() {
@@ -164,12 +164,12 @@ async function compare() {
 </details>
 
 <br />
-<details>
-<summary>**拦截请求**</summary>
+**拦截请求**
 [request.continue()参数](https://zhaoqize.github.io/puppeteer-api-zh_CN/#?product=Puppeteer&version=v13.0.0&show=api-requestcontinueoverrides)
 
-```
+**需要注意的是如果不continue的话页面会卡住!**
 
+```
 const puppeteer = require('puppeteer');
 (async () => {
   try {
@@ -184,10 +184,9 @@ const puppeteer = require('puppeteer');
       request.continue();
     });
     await page.goto('https://baidu.com');
-    await page.screenshot({ path: 'news.png', fullPage: true });
     await browser.close();
   } catch (e) {
     console.log(e);
   }
 })();
-</details>
+```
