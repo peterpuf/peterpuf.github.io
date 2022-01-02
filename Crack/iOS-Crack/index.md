@@ -1,5 +1,8 @@
 ### [iOS逆向相关](https://puffhub.github.io/)
 
+![iOS逆向学习方向](./imgs/iOS逆向学习方向.png)
+
+
 > 0x00 [Objective-C 语法基础✅](./Objective-C语法基础.md)
 > 
 > 0x01 [Objective-C 语法进阶✅](./Objective-C语法进阶.md)
