@@ -53,3 +53,19 @@
 - MONKEYDEV_CLASS_DUMP: 是否dump header文件.
 - MONKEYDEV_DEFAULT_BUNDLEID: 是否打包后使用原app的bundleId.
 - MONKEYDEV_RESTORE_SYMBOL: 是否恢复符号表. (有些App会抹掉符号表, 这样就根本看不到正常的函数名称, 打开这个可以看到真实的类名和函数名称).
+
+
+### 最后的最后
+选择真机运行项目就可以跑起来了, 需要注意运行/构建的项目是源App, 而不是链接库Dylib文件～
+
+
+**遇到的问题**
+
+---
+提示 ````libstdc++.dylib```不存在
+![提示文件不存在](./imgs/逆向环境问题1.png)
+
+```git clone https://github.com/devdawei/libstdc-```
+```sudo sh install-xcode_11+.sh```
+
+---

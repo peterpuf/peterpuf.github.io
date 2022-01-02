@@ -80,4 +80,6 @@ MonkeyDev [Github Wiki地址](https://github.com/AloneMonkey/MonkeyDev/wiki)
 下载后将文件夹拷贝到```/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Xcode```路径下即可
 
 ---
-
+**安装Theos的时候提示超时**
+![git超时](./imgs/逆向环境问题2.png)
+可以更新下本地的host文件, github下的域名再次尝试, 因为这里的git命令包含 ```--recursive```, 意味着会将这个仓库下的子项目也克隆下来, 如果不带这个参数的话很可能导致其他文件缺失的问题或Xcode提示环境未安装的问题.

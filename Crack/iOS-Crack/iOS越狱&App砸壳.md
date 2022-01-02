@@ -116,3 +116,4 @@ iProxy是一个可以将设备上端口号映射到电脑某个端口的软件, 
 
 解决: 按照PC上frida安装的版本, 去[这里](https://github.com/frida/frida/releases/)下载frida-gadget-ios的包, 并放到报错中提示的位置.
 
+
