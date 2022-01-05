@@ -66,6 +66,7 @@
 ![提示文件不存在](./imgs/逆向环境问题1.png)
 
 ```git clone https://github.com/devdawei/libstdc-```
+
 ```sudo sh install-xcode_11+.sh```
 
 ---
