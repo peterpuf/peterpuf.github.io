@@ -7,7 +7,9 @@
 
 ### [Android逆向](Crack/Android-Crack/index.md)
 
-### [JS/小程序逆向](Crack/MiniProgram-JS/index.md)
+### [小程序逆向](Crack/MiniProgram-JS/index.md)
+
+### [JS逆向](Crack/JS-Crack/index.md)
 
 ### [加密算法]()
 
@@ -19,3 +21,15 @@
 ### [NodeJs](Syntax/NodeJs.md)
 
 ### [Puppeteer](Syntax/Puppeteer.md)
+
+<!--
+	Arm汇编
+	Frida/objection 
+	
+	Android 更新wx机器人
+	
+	
+	实战方向
+	
+	gof
+-->
