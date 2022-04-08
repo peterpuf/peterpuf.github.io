@@ -73,7 +73,6 @@ main.py
 import mitmproxy.http
 import os
 
-base_path = "/Users/admin/Desktop/kx3w/Frida高级逆向（2020版）/课时3 Frida hook nativeEDIUS_x264"
 class Counter:
     def __init__(self):
         pass
