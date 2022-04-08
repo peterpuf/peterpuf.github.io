@@ -1,0 +1,67 @@
+Python
+https://www.python.org/downloads/macos/
+
+pip3 (安装后重启终端)
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py
+
+Pycharm
+https://www.jetbrains.com/pycharm/download/#section=mac
+
+JDK
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+Account: angrypuff333@gmail.com; Ll19970314123
+Failed to Load JVM: https://stackoverflow.com/questions/59415053/javavm-fatal-failed-to-load-the-jvm-library
+
+
+IDEA
+https://www.jetbrains.com/idea/download/#section=mac
+
+Android Studio
+https://developer.android.google.cn/studio/
+删除AS配置(相当于重置): https://blog.csdn.net/yx_sunny/article/details/113917917
+monitor卡死: https://blog.csdn.net/qq_35244415/article/details/110656444
+配置JavaHome: $JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home
+
+Chrome 
+https://www.google.cn/chrome/
+
+Iterm2
+https://iterm2.com/
+主题: https://iterm2colorschemes.com/
+设置: https://blog.csdn.net/weixin_31500907/article/details/113081813
+
+OhMyZsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+Brew
+https://www.jianshu.com/p/ed35ce1981e8/
+
+
+
+Sublime
+https://www.sublimetext.com/
+
+安装Pretty Json: cmd+shift+p -> install Package -> pretty JSON
+设置pretty Json快捷键: preference -> Key Binds -> [{"keys":["command+shift+j"],"command":"pretty_json"}]
+
+
+WeChat
+https://mac.weixin.qq.com/?t=mac&lang=zh_CN
+
+
+Jadx:
+https://github.com/skylot/jadx/releases
+修改内存: https://blog.csdn.net/u013337103/article/details/122067535
+
+注意事项:
+Chrome (记得同步插件的一些配置！油猴等)
+Navicat 备份连接
+.zshrc 备份
+
+
+
+
+
+
+
