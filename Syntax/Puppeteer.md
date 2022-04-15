@@ -61,7 +61,7 @@ await page.evaluateOnNewDocument(脚本内容);
 
 <br />
 <details>
-<summary>**过极验滑块[.](https://github.com/puffhub/puffhub.github.io/blob/master/Syntax/Puppeteer.md)**</summary>
+<summary>**过极验滑块**</summary>
 
 ```
 async function slider() {
