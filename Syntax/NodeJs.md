@@ -84,3 +84,34 @@ function doGet(){
 }
 
 ```
+
+
+### 获取滑动轨迹
+
+```
+var a123 = []
+window.onmousemove = function(event){
+            var nDiv = document.createElement('div')  //创建新的div
+            var e = event || window.event   //获取事件对象
+            //设置div的样式(红色小圆点)和位置(鼠标当前位置)
+            nDiv.style.cssText = "position:absolute; width:5px; height:5px; background-color:red; border-radius:50%"   
+            nDiv.style.left = e.pageX + "px"
+            nDiv.style.top = e.pageY + "px"
+            a123.push({'x':e.pageX, "y": e.pageY});
+            console.log(a123);
+            
+            //把创建好的div添加到body里面
+            document.body.appendChild(nDiv)
+
+            //延迟定时器实现一秒后删除效果
+            setTimeout(function(){
+                nDiv.remove();
+            },1000)
+        }
+
+setTimeout(function(){
+                console.clear()
+                a123 = []
+            },5000)
+
+```

@@ -190,3 +190,27 @@ const puppeteer = require('puppeteer');
   }
 })();
 ```
+
+**获取元素坐标**
+
+```
+let element = await page.$("#abc");
+
+let box = await element.boundingBox();
+
+var point = await elementHandle.boundingBox();
+
+// x 元素的 x 坐标(以像素为单位)。
+// y 元素的 y 坐标(以像素为单位)。
+// width 元素的像素宽度。
+// height 元素的像素高度。
+```
+
+**对vue写的页面进行事件发送, 动态修改页面内容**
+
+```
+let dep = document.querySelector(".dep-time")
+dep.value="2023-03-12"
+dep.dispatchEvent(new Event('input'))
+
+```
