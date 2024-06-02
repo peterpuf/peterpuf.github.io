@@ -22,6 +22,10 @@
 
 ### [Puppeteer](Syntax/Puppeteer.md)
 
+<br />
+## 其他
+
+### [待整理](Other/index.md)
 <!--
 	Arm汇编
 	Frida/objection 
